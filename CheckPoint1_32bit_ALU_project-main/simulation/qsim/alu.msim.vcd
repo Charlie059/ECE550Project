@@ -1,0 +1,1819 @@
+$comment
+	File created using the following command:
+		vcd file alu.msim.vcd -direction
+$end
+$date
+	Sat Sep 11 22:47:37 2021
+$end
+$version
+	ModelSim Version 10.4d
+$end
+$timescale
+	1ps
+$end
+
+$scope module alu_vlg_vec_tst $end
+$var reg 5 ! ctrl_ALUopcode [4:0] $end
+$var reg 5 " ctrl_shiftamt [4:0] $end
+$var reg 32 # data_operandA [31:0] $end
+$var reg 32 $ data_operandB [31:0] $end
+$var wire 1 % data_result [31] $end
+$var wire 1 & data_result [30] $end
+$var wire 1 ' data_result [29] $end
+$var wire 1 ( data_result [28] $end
+$var wire 1 ) data_result [27] $end
+$var wire 1 * data_result [26] $end
+$var wire 1 + data_result [25] $end
+$var wire 1 , data_result [24] $end
+$var wire 1 - data_result [23] $end
+$var wire 1 . data_result [22] $end
+$var wire 1 / data_result [21] $end
+$var wire 1 0 data_result [20] $end
+$var wire 1 1 data_result [19] $end
+$var wire 1 2 data_result [18] $end
+$var wire 1 3 data_result [17] $end
+$var wire 1 4 data_result [16] $end
+$var wire 1 5 data_result [15] $end
+$var wire 1 6 data_result [14] $end
+$var wire 1 7 data_result [13] $end
+$var wire 1 8 data_result [12] $end
+$var wire 1 9 data_result [11] $end
+$var wire 1 : data_result [10] $end
+$var wire 1 ; data_result [9] $end
+$var wire 1 < data_result [8] $end
+$var wire 1 = data_result [7] $end
+$var wire 1 > data_result [6] $end
+$var wire 1 ? data_result [5] $end
+$var wire 1 @ data_result [4] $end
+$var wire 1 A data_result [3] $end
+$var wire 1 B data_result [2] $end
+$var wire 1 C data_result [1] $end
+$var wire 1 D data_result [0] $end
+$var wire 1 E isLessThan $end
+$var wire 1 F isNotEqual $end
+$var wire 1 G overflow $end
+
+$scope module i1 $end
+$var wire 1 H gnd $end
+$var wire 1 I vcc $end
+$var wire 1 J unknown $end
+$var tri1 1 K devclrn $end
+$var tri1 1 L devpor $end
+$var tri1 1 M devoe $end
+$var wire 1 N ctrl_shiftamt[0]~input_o $end
+$var wire 1 O ctrl_shiftamt[1]~input_o $end
+$var wire 1 P ctrl_shiftamt[2]~input_o $end
+$var wire 1 Q ctrl_shiftamt[3]~input_o $end
+$var wire 1 R ctrl_shiftamt[4]~input_o $end
+$var wire 1 S data_result[0]~output_o $end
+$var wire 1 T data_result[1]~output_o $end
+$var wire 1 U data_result[2]~output_o $end
+$var wire 1 V data_result[3]~output_o $end
+$var wire 1 W data_result[4]~output_o $end
+$var wire 1 X data_result[5]~output_o $end
+$var wire 1 Y data_result[6]~output_o $end
+$var wire 1 Z data_result[7]~output_o $end
+$var wire 1 [ data_result[8]~output_o $end
+$var wire 1 \ data_result[9]~output_o $end
+$var wire 1 ] data_result[10]~output_o $end
+$var wire 1 ^ data_result[11]~output_o $end
+$var wire 1 _ data_result[12]~output_o $end
+$var wire 1 ` data_result[13]~output_o $end
+$var wire 1 a data_result[14]~output_o $end
+$var wire 1 b data_result[15]~output_o $end
+$var wire 1 c data_result[16]~output_o $end
+$var wire 1 d data_result[17]~output_o $end
+$var wire 1 e data_result[18]~output_o $end
+$var wire 1 f data_result[19]~output_o $end
+$var wire 1 g data_result[20]~output_o $end
+$var wire 1 h data_result[21]~output_o $end
+$var wire 1 i data_result[22]~output_o $end
+$var wire 1 j data_result[23]~output_o $end
+$var wire 1 k data_result[24]~output_o $end
+$var wire 1 l data_result[25]~output_o $end
+$var wire 1 m data_result[26]~output_o $end
+$var wire 1 n data_result[27]~output_o $end
+$var wire 1 o data_result[28]~output_o $end
+$var wire 1 p data_result[29]~output_o $end
+$var wire 1 q data_result[30]~output_o $end
+$var wire 1 r data_result[31]~output_o $end
+$var wire 1 s isNotEqual~output_o $end
+$var wire 1 t isLessThan~output_o $end
+$var wire 1 u overflow~output_o $end
+$var wire 1 v data_operandB[0]~input_o $end
+$var wire 1 w data_operandA[0]~input_o $end
+$var wire 1 x ctrl_ALUopcode[4]~input_o $end
+$var wire 1 y ctrl_ALUopcode[2]~input_o $end
+$var wire 1 z ctrl_ALUopcode[1]~input_o $end
+$var wire 1 { ctrl_ALUopcode[3]~input_o $end
+$var wire 1 | arithmeticoperator|add_sub_en|NAND_4|and21~0_combout $end
+$var wire 1 } arithmeticoperator|data_result[0]~2_combout $end
+$var wire 1 ~ data_operandB[1]~input_o $end
+$var wire 1 !! ctrl_ALUopcode[0]~input_o $end
+$var wire 1 "! data_operandA[1]~input_o $end
+$var wire 1 #! arithmeticoperator|csa_32|csa_16_1|rca_1_0|fa0|or1~0_combout $end
+$var wire 1 $! arithmeticoperator|csa_32|csa_16_1|rca_1_0|fa1|xor2~combout $end
+$var wire 1 %! arithmeticoperator|data_result[1]~3_combout $end
+$var wire 1 &! data_operandB[2]~input_o $end
+$var wire 1 '! arithmeticoperator|add_sub_op|mux2to1|out[2]~0_combout $end
+$var wire 1 (! data_operandA[2]~input_o $end
+$var wire 1 )! arithmeticoperator|csa_32|csa_16_1|rca_1_0|fa1|or1~0_combout $end
+$var wire 1 *! arithmeticoperator|data_result[2]~4_combout $end
+$var wire 1 +! data_operandA[3]~input_o $end
+$var wire 1 ,! data_operandB[3]~input_o $end
+$var wire 1 -! arithmeticoperator|csa_32|csa_16_1|rca1_3_2|fa1|xor2~0_combout $end
+$var wire 1 .! arithmeticoperator|_isNotEqual_|or_32|or3_1~0_combout $end
+$var wire 1 /! arithmeticoperator|data_result[3]~5_combout $end
+$var wire 1 0! data_operandB[4]~input_o $end
+$var wire 1 1! arithmeticoperator|csa_32|csa_16_1|rca0_3_2|fa0|and1~combout $end
+$var wire 1 2! arithmeticoperator|csa_32|csa_16_1|rca0_3_2|fa1|or1~0_combout $end
+$var wire 1 3! arithmeticoperator|add_sub_op|mux2to1|out[3]~2_combout $end
+$var wire 1 4! arithmeticoperator|csa_32|csa_16_1|rca1_3_2|fa1|or1~0_combout $end
+$var wire 1 5! data_operandA[4]~input_o $end
+$var wire 1 6! arithmeticoperator|csa_32|csa_16_1|mux_8to4|result[0]~0_combout $end
+$var wire 1 7! arithmeticoperator|data_result[4]~33_combout $end
+$var wire 1 8! arithmeticoperator|add_sub_op|mux2to1|out[4]~1_combout $end
+$var wire 1 9! data_operandB[5]~input_o $end
+$var wire 1 :! arithmeticoperator|add_sub_op|mux2to1|out[5]~3_combout $end
+$var wire 1 ;! data_operandA[5]~input_o $end
+$var wire 1 <! arithmeticoperator|csa_32|csa_16_1|rca1_6_4|rca2_0|fa0|xor2~combout $end
+$var wire 1 =! arithmeticoperator|csa_32|csa_16_1|rca0_6_4|fa0|and1~combout $end
+$var wire 1 >! arithmeticoperator|csa_32|csa_16_1|rca0_6_4|rca2_0|fa0|xor2~combout $end
+$var wire 1 ?! arithmeticoperator|csa_32|csa_16_1|mux_6to3|c_out~0_combout $end
+$var wire 1 @! arithmeticoperator|data_result[5]~6_combout $end
+$var wire 1 A! arithmeticoperator|csa_32|csa_16_1|rca0_6_4|rca2_0|fa0|or1~0_combout $end
+$var wire 1 B! data_operandB[6]~input_o $end
+$var wire 1 C! data_operandA[6]~input_o $end
+$var wire 1 D! arithmeticoperator|csa_32|csa_16_1|rca0_6_4|rca2_0|fa1|xor2~combout $end
+$var wire 1 E! arithmeticoperator|csa_32|csa_16_1|rca1_6_4|rca2_0|fa0|or1~0_combout $end
+$var wire 1 F! arithmeticoperator|csa_32|csa_16_1|rca1_6_4|rca2_0|fa1|xor2~combout $end
+$var wire 1 G! arithmeticoperator|data_result[6]~7_combout $end
+$var wire 1 H! arithmeticoperator|csa_32|csa_16_1|mux_8to4|c_out~0_combout $end
+$var wire 1 I! arithmeticoperator|csa_32|csa_16_1|mux_8to4|c_out~1_combout $end
+$var wire 1 J! data_operandA[7]~input_o $end
+$var wire 1 K! data_operandB[7]~input_o $end
+$var wire 1 L! arithmeticoperator|add_sub_op|mux2to1|out[7]~4_combout $end
+$var wire 1 M! arithmeticoperator|data_result[7]~8_combout $end
+$var wire 1 N! data_operandA[8]~input_o $end
+$var wire 1 O! data_operandB[8]~input_o $end
+$var wire 1 P! arithmeticoperator|add_sub_op|mux2to1|out[8]~5_combout $end
+$var wire 1 Q! arithmeticoperator|csa_32|csa_16_1|rca1_10_7|rca2_0|fa1|xor2~combout $end
+$var wire 1 R! arithmeticoperator|csa_32|csa_16_1|rca0_10_7|rca2_0|fa0|and1~combout $end
+$var wire 1 S! arithmeticoperator|csa_32|csa_16_1|rca0_10_7|rca2_0|fa1|xor2~combout $end
+$var wire 1 T! arithmeticoperator|data_result[8]~9_combout $end
+$var wire 1 U! data_operandB[9]~input_o $end
+$var wire 1 V! data_operandA[9]~input_o $end
+$var wire 1 W! arithmeticoperator|csa_32|csa_16_1|rca0_10_7|rca2_0|fa1|or1~0_combout $end
+$var wire 1 X! arithmeticoperator|csa_32|csa_16_1|rca0_10_7|rca2_1|fa0|xor2~combout $end
+$var wire 1 Y! arithmeticoperator|csa_32|csa_16_1|rca1_10_7|rca2_0|fa1|or1~0_combout $end
+$var wire 1 Z! arithmeticoperator|csa_32|csa_16_1|rca1_10_7|rca2_1|fa0|xor2~combout $end
+$var wire 1 [! arithmeticoperator|data_result[9]~10_combout $end
+$var wire 1 \! arithmeticoperator|csa_32|csa_16_1|rca1_10_7|rca2_1|fa0|or1~0_combout $end
+$var wire 1 ]! data_operandB[10]~input_o $end
+$var wire 1 ^! data_operandA[10]~input_o $end
+$var wire 1 _! arithmeticoperator|csa_32|csa_16_1|rca1_10_7|rca2_1|fa1|xor2~combout $end
+$var wire 1 `! arithmeticoperator|csa_32|csa_16_1|rca0_10_7|rca2_1|fa0|or1~0_combout $end
+$var wire 1 a! arithmeticoperator|csa_32|csa_16_1|rca0_10_7|rca2_1|fa1|xor2~combout $end
+$var wire 1 b! arithmeticoperator|data_result[10]~11_combout $end
+$var wire 1 c! arithmeticoperator|csa_32|csa_16_1|mux_10to5|c_out~0_combout $end
+$var wire 1 d! arithmeticoperator|csa_32|csa_16_1|mux_10to5|c_out~1_combout $end
+$var wire 1 e! data_operandA[11]~input_o $end
+$var wire 1 f! data_operandB[11]~input_o $end
+$var wire 1 g! arithmeticoperator|add_sub_op|mux2to1|out[11]~6_combout $end
+$var wire 1 h! arithmeticoperator|data_result[11]~12_combout $end
+$var wire 1 i! arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_0|fa0|and1~combout $end
+$var wire 1 j! data_operandB[12]~input_o $end
+$var wire 1 k! data_operandA[12]~input_o $end
+$var wire 1 l! arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_0|fa1|xor2~combout $end
+$var wire 1 m! arithmeticoperator|add_sub_op|mux2to1|out[12]~7_combout $end
+$var wire 1 n! arithmeticoperator|csa_32|csa_16_1|rca1_15_11|rca4_0|rca2_0|fa1|xor2~combout $end
+$var wire 1 o! arithmeticoperator|data_result[12]~13_combout $end
+$var wire 1 p! arithmeticoperator|csa_32|csa_16_1|rca1_15_11|rca4_0|rca2_0|fa1|or1~0_combout $end
+$var wire 1 q! data_operandB[13]~input_o $end
+$var wire 1 r! data_operandA[13]~input_o $end
+$var wire 1 s! arithmeticoperator|csa_32|csa_16_1|rca1_15_11|rca4_0|rca2_1|fa0|xor2~combout $end
+$var wire 1 t! arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_0|fa1|or1~0_combout $end
+$var wire 1 u! arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_1|fa0|xor2~combout $end
+$var wire 1 v! arithmeticoperator|data_result[13]~14_combout $end
+$var wire 1 w! arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_1|fa0|or1~0_combout $end
+$var wire 1 x! data_operandA[14]~input_o $end
+$var wire 1 y! data_operandB[14]~input_o $end
+$var wire 1 z! arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_1|fa1|xor2~combout $end
+$var wire 1 {! arithmeticoperator|csa_32|csa_16_1|rca1_15_11|rca4_0|rca2_1|fa0|or1~0_combout $end
+$var wire 1 |! arithmeticoperator|csa_32|csa_16_1|rca1_15_11|rca4_0|rca2_1|fa1|xor2~combout $end
+$var wire 1 }! arithmeticoperator|data_result[14]~15_combout $end
+$var wire 1 ~! arithmeticoperator|csa_32|csa_16_1|rca1_15_11|rca4_0|rca2_1|fa1|or1~0_combout $end
+$var wire 1 !" data_operandB[15]~input_o $end
+$var wire 1 "" data_operandA[15]~input_o $end
+$var wire 1 #" arithmeticoperator|csa_32|csa_16_1|rca1_15_11|fa1|xor2~combout $end
+$var wire 1 $" arithmeticoperator|csa_32|csa_16_1|rca0_15_11|rca4_0|rca2_1|fa1|or1~0_combout $end
+$var wire 1 %" arithmeticoperator|csa_32|csa_16_1|rca0_15_11|fa1|xor2~combout $end
+$var wire 1 &" arithmeticoperator|data_result[15]~16_combout $end
+$var wire 1 '" arithmeticoperator|csa_32|csa_16_1|mux_12to6|c_out~0_combout $end
+$var wire 1 (" arithmeticoperator|csa_32|csa_16_1|mux_12to6|c_out~1_combout $end
+$var wire 1 )" data_operandB[16]~input_o $end
+$var wire 1 *" arithmeticoperator|add_sub_op|mux2to1|out[16]~8_combout $end
+$var wire 1 +" data_operandA[16]~input_o $end
+$var wire 1 ," arithmeticoperator|data_result[16]~17_combout $end
+$var wire 1 -" data_operandB[17]~input_o $end
+$var wire 1 ." arithmeticoperator|csa_32|csa0_16_2|rca_1_0|fa0|and1~combout $end
+$var wire 1 /" data_operandA[17]~input_o $end
+$var wire 1 0" arithmeticoperator|csa_32|csa0_16_2|rca_1_0|fa1|xor2~combout $end
+$var wire 1 1" arithmeticoperator|add_sub_op|mux2to1|out[17]~9_combout $end
+$var wire 1 2" arithmeticoperator|csa_32|csa1_16_2|rca_1_0|fa1|xor2~combout $end
+$var wire 1 3" arithmeticoperator|data_result[17]~18_combout $end
+$var wire 1 4" arithmeticoperator|csa_32|csa1_16_2|rca_1_0|fa1|or1~0_combout $end
+$var wire 1 5" data_operandB[18]~input_o $end
+$var wire 1 6" data_operandA[18]~input_o $end
+$var wire 1 7" arithmeticoperator|csa_32|csa1_16_2|mux_6to3|result[0]~2_combout $end
+$var wire 1 8" arithmeticoperator|csa_32|csa0_16_2|rca_1_0|fa1|or1~0_combout $end
+$var wire 1 9" arithmeticoperator|csa_32|csa0_16_2|mux_6to3|result[0]~3_combout $end
+$var wire 1 :" arithmeticoperator|data_result[18]~19_combout $end
+$var wire 1 ;" data_operandB[19]~input_o $end
+$var wire 1 <" data_operandA[19]~input_o $end
+$var wire 1 =" arithmeticoperator|csa_32|csa0_16_2|rca1_3_2|fa1|xor2~0_combout $end
+$var wire 1 >" arithmeticoperator|add_sub_op|mux2to1|out[18]~10_combout $end
+$var wire 1 ?" arithmeticoperator|csa_32|csa0_16_2|mux_6to3|result[1]~2_combout $end
+$var wire 1 @" arithmeticoperator|_isNotEqual_|or_32|or3_1~1_combout $end
+$var wire 1 A" arithmeticoperator|data_result[19]~20_combout $end
+$var wire 1 B" data_operandA[20]~input_o $end
+$var wire 1 C" data_operandB[20]~input_o $end
+$var wire 1 D" arithmeticoperator|csa_32|csa0_16_2|rca0_3_2|fa0|and1~combout $end
+$var wire 1 E" arithmeticoperator|csa_32|csa0_16_2|rca0_3_2|fa1|or1~0_combout $end
+$var wire 1 F" arithmeticoperator|add_sub_op|mux2to1|out[19]~11_combout $end
+$var wire 1 G" arithmeticoperator|csa_32|csa0_16_2|rca1_3_2|fa1|or1~0_combout $end
+$var wire 1 H" arithmeticoperator|csa_32|csa1_16_2|mux_6to3|c_out~0_combout $end
+$var wire 1 I" arithmeticoperator|csa_32|csa1_16_2|mux_8to4|result[0]~2_combout $end
+$var wire 1 J" arithmeticoperator|csa_32|csa0_16_2|mux_6to3|c_out~0_combout $end
+$var wire 1 K" arithmeticoperator|csa_32|csa0_16_2|mux_8to4|result[0]~2_combout $end
+$var wire 1 L" arithmeticoperator|data_result[20]~21_combout $end
+$var wire 1 M" data_operandB[21]~input_o $end
+$var wire 1 N" arithmeticoperator|add_sub_op|mux2to1|out[21]~13_combout $end
+$var wire 1 O" arithmeticoperator|add_sub_op|mux2to1|out[20]~12_combout $end
+$var wire 1 P" data_operandA[21]~input_o $end
+$var wire 1 Q" arithmeticoperator|csa_32|csa0_16_2|rca1_6_4|rca2_0|fa0|xor2~combout $end
+$var wire 1 R" arithmeticoperator|csa_32|csa0_16_2|rca0_6_4|fa0|and1~combout $end
+$var wire 1 S" arithmeticoperator|csa_32|csa0_16_2|rca0_6_4|rca2_0|fa0|xor2~combout $end
+$var wire 1 T" arithmeticoperator|csa_32|mux_36to18|result[5]~0_combout $end
+$var wire 1 U" arithmeticoperator|data_result[21]~22_combout $end
+$var wire 1 V" arithmeticoperator|csa_32|csa0_16_2|rca1_6_4|rca2_0|fa0|or1~0_combout $end
+$var wire 1 W" data_operandB[22]~input_o $end
+$var wire 1 X" data_operandA[22]~input_o $end
+$var wire 1 Y" arithmeticoperator|csa_32|csa0_16_2|rca1_6_4|rca2_0|fa1|xor2~combout $end
+$var wire 1 Z" arithmeticoperator|csa_32|csa0_16_2|rca0_6_4|rca2_0|fa0|or1~0_combout $end
+$var wire 1 [" arithmeticoperator|csa_32|csa0_16_2|rca0_6_4|rca2_0|fa1|xor2~combout $end
+$var wire 1 \" arithmeticoperator|data_result[22]~23_combout $end
+$var wire 1 ]" data_operandB[23]~input_o $end
+$var wire 1 ^" data_operandA[23]~input_o $end
+$var wire 1 _" arithmeticoperator|csa_32|csa0_16_2|rca0_6_4|rca2_0|fa1|or1~0_combout $end
+$var wire 1 `" arithmeticoperator|csa_32|csa0_16_2|rca1_6_4|rca2_0|fa1|or1~0_combout $end
+$var wire 1 a" arithmeticoperator|csa_32|csa1_16_2|mux_8to4|c_out~0_combout $end
+$var wire 1 b" arithmeticoperator|csa_32|csa1_16_2|mux_10to5|result[0]~2_combout $end
+$var wire 1 c" arithmeticoperator|csa_32|csa0_16_2|mux_8to4|c_out~0_combout $end
+$var wire 1 d" arithmeticoperator|csa_32|csa0_16_2|mux_10to5|result[0]~2_combout $end
+$var wire 1 e" arithmeticoperator|data_result[23]~24_combout $end
+$var wire 1 f" arithmeticoperator|csa_32|mux_36to18|result[9]~1_combout $end
+$var wire 1 g" arithmeticoperator|csa_32|mux_36to18|result[9]~2_combout $end
+$var wire 1 h" data_operandA[24]~input_o $end
+$var wire 1 i" data_operandB[24]~input_o $end
+$var wire 1 j" arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_0|fa0|and1~combout $end
+$var wire 1 k" arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_0|fa1|xor2~combout $end
+$var wire 1 l" arithmeticoperator|add_sub_op|mux2to1|out[24]~15_combout $end
+$var wire 1 m" arithmeticoperator|add_sub_op|mux2to1|out[23]~14_combout $end
+$var wire 1 n" arithmeticoperator|csa_32|csa0_16_2|rca1_10_7|rca2_0|fa1|xor2~combout $end
+$var wire 1 o" arithmeticoperator|data_result[24]~25_combout $end
+$var wire 1 p" data_operandA[25]~input_o $end
+$var wire 1 q" data_operandB[25]~input_o $end
+$var wire 1 r" arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_0|fa1|or1~0_combout $end
+$var wire 1 s" arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_1|fa0|xor2~combout $end
+$var wire 1 t" arithmeticoperator|csa_32|csa0_16_2|rca1_10_7|rca2_0|fa1|or1~0_combout $end
+$var wire 1 u" arithmeticoperator|csa_32|csa0_16_2|rca1_10_7|rca2_1|fa0|xor2~combout $end
+$var wire 1 v" arithmeticoperator|data_result[25]~26_combout $end
+$var wire 1 w" arithmeticoperator|csa_32|csa0_16_2|rca1_10_7|rca2_1|fa0|or1~0_combout $end
+$var wire 1 x" data_operandA[26]~input_o $end
+$var wire 1 y" data_operandB[26]~input_o $end
+$var wire 1 z" arithmeticoperator|csa_32|csa0_16_2|rca1_10_7|rca2_1|fa1|xor2~combout $end
+$var wire 1 {" arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_1|fa0|or1~0_combout $end
+$var wire 1 |" arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_1|fa1|xor2~combout $end
+$var wire 1 }" arithmeticoperator|data_result[26]~27_combout $end
+$var wire 1 ~" data_operandA[27]~input_o $end
+$var wire 1 !# arithmeticoperator|csa_32|csa0_16_2|rca0_10_7|rca2_1|fa1|or1~0_combout $end
+$var wire 1 "# arithmeticoperator|csa_32|csa0_16_2|rca1_10_7|rca2_1|fa1|or1~0_combout $end
+$var wire 1 ## arithmeticoperator|csa_32|csa1_16_2|mux_10to5|c_out~0_combout $end
+$var wire 1 $# data_operandB[27]~input_o $end
+$var wire 1 %# arithmeticoperator|csa_32|csa1_16_2|mux_12to6|result[0]~2_combout $end
+$var wire 1 &# arithmeticoperator|csa_32|csa0_16_2|mux_10to5|c_out~0_combout $end
+$var wire 1 '# arithmeticoperator|csa_32|csa0_16_2|mux_12to6|result[0]~2_combout $end
+$var wire 1 (# arithmeticoperator|data_result[27]~28_combout $end
+$var wire 1 )# arithmeticoperator|csa_32|mux_36to18|result[15]~3_combout $end
+$var wire 1 *# arithmeticoperator|csa_32|mux_36to18|result[15]~4_combout $end
+$var wire 1 +# data_operandB[28]~input_o $end
+$var wire 1 ,# arithmeticoperator|add_sub_op|mux2to1|out[28]~17_combout $end
+$var wire 1 -# data_operandA[28]~input_o $end
+$var wire 1 .# arithmeticoperator|add_sub_op|mux2to1|out[27]~16_combout $end
+$var wire 1 /# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|rca4_0|rca2_0|fa1|xor2~combout $end
+$var wire 1 0# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_0|fa0|and1~combout $end
+$var wire 1 1# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_0|fa1|xor2~combout $end
+$var wire 1 2# arithmeticoperator|data_result[28]~29_combout $end
+$var wire 1 3# data_operandB[29]~input_o $end
+$var wire 1 4# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|rca4_0|rca2_0|fa1|or1~0_combout $end
+$var wire 1 5# data_operandA[29]~input_o $end
+$var wire 1 6# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|rca4_0|rca2_1|fa0|xor2~combout $end
+$var wire 1 7# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_0|fa1|or1~0_combout $end
+$var wire 1 8# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_1|fa0|xor2~combout $end
+$var wire 1 9# arithmeticoperator|data_result[29]~30_combout $end
+$var wire 1 :# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_1|fa0|or1~0_combout $end
+$var wire 1 ;# data_operandA[30]~input_o $end
+$var wire 1 <# data_operandB[30]~input_o $end
+$var wire 1 =# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_1|fa1|xor2~combout $end
+$var wire 1 ># arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|rca4_0|rca2_1|fa0|or1~0_combout $end
+$var wire 1 ?# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|rca4_0|rca2_1|fa1|xor2~combout $end
+$var wire 1 @# arithmeticoperator|data_result[30]~31_combout $end
+$var wire 1 A# data_operandA[31]~input_o $end
+$var wire 1 B# data_operandB[31]~input_o $end
+$var wire 1 C# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|fa1|xor2~0_combout $end
+$var wire 1 D# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|rca4_0|rca2_1|fa1|or1~0_combout $end
+$var wire 1 E# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|rca4_0|rca2_1|fa1|or1~0_combout $end
+$var wire 1 F# arithmeticoperator|csa_32|mux_36to18|result[15]~5_combout $end
+$var wire 1 G# arithmeticoperator|data_result[31]~32_combout $end
+$var wire 1 H# arithmeticoperator|_isNotEqual_|or_32|or3_1~20_combout $end
+$var wire 1 I# arithmeticoperator|_isNotEqual_|or_32|or3_1~14_combout $end
+$var wire 1 J# arithmeticoperator|_isNotEqual_|or_32|or3_1~15_combout $end
+$var wire 1 K# arithmeticoperator|_isNotEqual_|or_32|or3_1~13_combout $end
+$var wire 1 L# arithmeticoperator|_isNotEqual_|or_32|or3_1~16_combout $end
+$var wire 1 M# arithmeticoperator|csa_32|csa_16_1|mux_6to3|result[0]~0_combout $end
+$var wire 1 N# arithmeticoperator|_isNotEqual_|or_32|or3_1~17_combout $end
+$var wire 1 O# arithmeticoperator|_isNotEqual_|or_32|or3_1~18_combout $end
+$var wire 1 P# arithmeticoperator|_isNotEqual_|or_32|or3_1~10_combout $end
+$var wire 1 Q# arithmeticoperator|_isNotEqual_|or_32|or3_1~11_combout $end
+$var wire 1 R# arithmeticoperator|_isNotEqual_|or_32|or3_1~8_combout $end
+$var wire 1 S# arithmeticoperator|_isNotEqual_|or_32|or3_1~9_combout $end
+$var wire 1 T# arithmeticoperator|_isNotEqual_|or_32|or3_1~12_combout $end
+$var wire 1 U# arithmeticoperator|_isNotEqual_|or_32|or3_1~19_combout $end
+$var wire 1 V# arithmeticoperator|_isNotEqual_|or_32|or3_1~21_combout $end
+$var wire 1 W# arithmeticoperator|_isNotEqual_|or_32|or3_1~22_combout $end
+$var wire 1 X# arithmeticoperator|_isNotEqual_|or_32|or3_1~23_combout $end
+$var wire 1 Y# arithmeticoperator|csa_32|mux_36to18|result[0]~6_combout $end
+$var wire 1 Z# arithmeticoperator|_isNotEqual_|or_32|or3_1~24_combout $end
+$var wire 1 [# arithmeticoperator|_isNotEqual_|or_32|or3_1~25_combout $end
+$var wire 1 \# arithmeticoperator|_isNotEqual_|or_32|or3_1~26_combout $end
+$var wire 1 ]# arithmeticoperator|_isNotEqual_|or_32|or3_1~27_combout $end
+$var wire 1 ^# arithmeticoperator|_isNotEqual_|or_32|or3_1~6_combout $end
+$var wire 1 _# arithmeticoperator|_isNotEqual_|or_32|or3_1~2_combout $end
+$var wire 1 `# arithmeticoperator|_isNotEqual_|or_32|or3_1~4_combout $end
+$var wire 1 a# arithmeticoperator|_isNotEqual_|or_32|or3_1~3_combout $end
+$var wire 1 b# arithmeticoperator|_isNotEqual_|or_32|or3_1~5_combout $end
+$var wire 1 c# arithmeticoperator|_isNotEqual_|or_32|or3_1~7_combout $end
+$var wire 1 d# arithmeticoperator|_isNotEqual_|and2~combout $end
+$var wire 1 e# arithmeticoperator|csa_32|mux_36to18|c_in31~0_combout $end
+$var wire 1 f# arithmeticoperator|csa_32|csa0_16_2|rca0_15_11|fa1|or1~0_combout $end
+$var wire 1 g# arithmeticoperator|csa_32|csa0_16_2|rca1_15_11|fa1|or1~0_combout $end
+$var wire 1 h# arithmeticoperator|of|xor1~combout $end
+$var wire 1 i# arithmeticoperator|islessthan|and_3|and2~combout $end
+$var wire 1 j# arithmeticoperator|overflow_EN~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+bx "
+b0 #
+b1000100110000 $
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0E
+0F
+0G
+0H
+1I
+xJ
+1K
+1L
+1M
+xN
+xO
+xP
+xQ
+xR
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+1.!
+0/!
+10!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+18!
+19!
+1:!
+0;!
+0<!
+0=!
+1>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+1E!
+1F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+1O!
+1P!
+1Q!
+0R!
+1S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+1j!
+0k!
+1l!
+1m!
+1n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+1@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+0}"
+0~"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+0'#
+0(#
+0)#
+0*#
+0+#
+0,#
+0-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+08#
+09#
+0:#
+0;#
+0<#
+0=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0C#
+0D#
+0E#
+0F#
+0G#
+0H#
+1I#
+1J#
+0K#
+1L#
+0M#
+0N#
+1O#
+0P#
+1Q#
+1R#
+0S#
+1T#
+1U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+0[#
+0\#
+1]#
+0^#
+0_#
+0`#
+0a#
+0b#
+0c#
+0d#
+0e#
+0f#
+0g#
+0h#
+0i#
+0j#
+$end
+#10000
+b10000000000000000000000000000000 #
+b11000000000000000000000000000000 #
+b11100000000000000000000000000000 #
+b11110000000000000000000000000000 #
+b11111000000000000000000000000000 #
+b11111100000000000000000000000000 #
+b11111110000000000000000000000000 #
+b11111111000000000000000000000000 #
+b11111111100000000000000000000000 #
+b11111111110000000000000000000000 #
+b11111111111000000000000000000000 #
+b11111111111100000000000000000000 #
+b11111111111110000000000000000000 #
+b11111111111111000000000000000000 #
+b11111111111111100000000000000000 #
+b11111111111111110000000000000000 #
+b11111111111111111000000000000000 #
+b11111111111111111100000000000000 #
+b11111111111111111110000000000000 #
+b11111111111111111111000000000000 #
+b11111111111111111111100000000000 #
+b11111111111111111111110000000000 #
+b11111111111111111111111000000000 #
+b11111111111111111111111100000000 #
+b11111111111111111111111110000000 #
+b11111111111111111111111111000000 #
+b11111111111111111111111111100000 #
+b11111111111111111111111111110000 #
+b11111111111111111111111111111000 #
+b11111111111111111111111111111100 #
+b11111111111111111111111111111110 #
+b11111111111111111111111111111111 #
+b1 !
+1!!
+1w
+1"!
+1(!
+1+!
+15!
+1;!
+1C!
+1J!
+1N!
+1V!
+1^!
+1e!
+1k!
+1r!
+1x!
+1""
+1+"
+1/"
+16"
+1<"
+1B"
+1P"
+1X"
+1^"
+1h"
+1p"
+1x"
+1~"
+1-#
+15#
+1;#
+1A#
+1g#
+1f#
+1E#
+1D#
+1>#
+1:#
+17#
+10#
+1.#
+1,#
+1"#
+1!#
+1{"
+1w"
+1r"
+1m"
+1l"
+1j"
+1`"
+1_"
+1Z"
+1R"
+1O"
+1N"
+1F"
+1E"
+1D"
+1>"
+18"
+11"
+1."
+1*"
+1("
+1$"
+1~!
+1{!
+1w!
+0m!
+1i!
+1g!
+1d!
+1`!
+1\!
+1R!
+0P!
+1L!
+1I!
+0:!
+08!
+13!
+12!
+11!
+1)!
+1'!
+1#!
+14!
+1<!
+16!
+1N#
+1Y!
+1S#
+1p!
+14"
+1G"
+1V"
+1^#
+1t"
+14#
+1d#
+1s
+1h#
+1e#
+1F#
+1?#
+1=#
+18#
+11#
+1/#
+1)#
+1&#
+1##
+1|"
+1z"
+1s"
+1n"
+1k"
+1f"
+1c"
+1a"
+1["
+1S"
+1Q"
+1T"
+1J"
+1H"
+0@"
+1?"
+19"
+12"
+10"
+1[#
+1'"
+1%"
+1#"
+1|!
+1z!
+0n!
+1t!
+0l!
+1c!
+1a!
+1_!
+1W!
+0S!
+0Q!
+1K#
+0I#
+0<!
+1?!
+06!
+1M#
+0.!
+1$!
+1Z!
+1s!
+17"
+1Y"
+1c#
+1u"
+16#
+1F
+0h#
+1_#
+1V#
+1*#
+1'#
+1%#
+1`#
+1a#
+1g"
+1d"
+1b"
+0c#
+1K"
+1I"
+1\#
+1Z#
+1W#
+1u!
+1X!
+0J#
+1P#
+1H!
+1j#
+1u
+1c#
+0V#
+1H#
+1X#
+1b#
+1G
+0j#
+1i#
+1t
+0u
+0G
+1E
+#20000
+b1111111111111111111111111111111 #
+b111111111111111111111111111111 #
+b11111111111111111111111111111 #
+b1111111111111111111111111111 #
+b111111111111111111111111111 #
+b11111111111111111111111111 #
+b1111111111111111111111111 #
+b111111111111111111111111 #
+b11111111111111111111111 #
+b1111111111111111111111 #
+b111111111111111111111 #
+b11111111111111111111 #
+b1111111111111111111 #
+b111111111111111111 #
+b11111111111111111 #
+b1111111111111111 #
+b111111111111111 #
+b11111111111111 #
+b10111111111111 #
+b10011111111111 #
+b10001111111111 #
+b10001011111111 #
+b10001010111111 #
+b10001010110111 #
+b10001010110011 #
+b10001010110001 #
+b10001010110000 #
+0w
+0"!
+0(!
+0+!
+0C!
+0N!
+0^!
+0e!
+0k!
+0x!
+0""
+0+"
+0/"
+06"
+0<"
+0B"
+0P"
+0X"
+0^"
+0h"
+0p"
+0x"
+0~"
+0-#
+05#
+0;#
+0A#
+0$!
+0M#
+01!
+1-!
+0F!
+1D!
+0Y!
+0W!
+1S!
+1Q!
+0a!
+0_!
+0p!
+1n!
+0i!
+0t!
+1l!
+0|!
+0z!
+0%"
+0#"
+1Y#
+02"
+0."
+00"
+0D"
+09"
+07"
+1="
+0R"
+0Q"
+0K"
+0I"
+0S"
+0["
+0Y"
+0n"
+0j"
+0d"
+0b"
+0k"
+0u"
+0s"
+0|"
+0z"
+00#
+0/#
+0'#
+0%#
+01#
+08#
+06#
+0?#
+0=#
+1C#
+02!
+1.!
+0P#
+0Z!
+0X!
+0s!
+0l!
+0u!
+0[#
+0W#
+08"
+10"
+0Z#
+0E"
+1@"
+0Z"
+1S"
+0a#
+0r"
+1k"
+0`#
+07#
+11#
+0H#
+0F#
+0L#
+0Q#
+0X#
+0J"
+19"
+1Z#
+0_"
+1["
+0b#
+0{"
+1s"
+1`#
+0:#
+18#
+0_#
+0i#
+0t
+0\#
+0c"
+1K"
+0f"
+0c#
+0!#
+1|"
+0D#
+1=#
+0E
+0&#
+1d"
+0)#
+0f#
+1'#
+#140000
+b100110000 $
+b110000 $
+b10000 $
+b0 $
+b10000000000000000010001010110000 #
+b11000000000000000010001010110000 #
+b11100000000000000010001010110000 #
+b11110000000000000010001010110000 #
+b11111000000000000010001010110000 #
+b11111100000000000010001010110000 #
+b11111110000000000010001010110000 #
+b11111111000000000010001010110000 #
+b11111111100000000010001010110000 #
+b11111111110000000010001010110000 #
+b11111111111000000010001010110000 #
+b11111111111100000010001010110000 #
+b11111111111110000010001010110000 #
+b11111111111111000010001010110000 #
+b11111111111111100010001010110000 #
+b11111111111111110010001010110000 #
+b11111111111111111010001010110000 #
+b11111111111111111110001010110000 #
+b11111111111111111111001010110000 #
+b11111111111111111111101010110000 #
+b11111111111111111111111010110000 #
+b11111111111111111111111110110000 #
+b11111111111111111111111111110000 #
+b11111111111111111111111111111000 #
+b11111111111111111111111111111100 #
+b11111111111111111111111111111110 #
+b11111111111111111111111111111111 #
+1w
+1"!
+1(!
+1+!
+1C!
+1N!
+1^!
+1e!
+1k!
+1x!
+1""
+1+"
+1/"
+16"
+1<"
+1B"
+1P"
+1X"
+1^"
+1h"
+1p"
+1x"
+1~"
+1-#
+15#
+1;#
+1A#
+00!
+09!
+0O!
+0j!
+1$!
+1M#
+11!
+12!
+0-!
+1F!
+0D!
+1Y!
+1W!
+0Q!
+1a!
+1_!
+1p!
+0n!
+1i!
+1t!
+1|!
+1z!
+1%"
+1#"
+0Y#
+12"
+1."
+18"
+00"
+1D"
+09"
+17"
+1E"
+0="
+1R"
+1Q"
+0K"
+1I"
+1Z"
+0S"
+1_"
+0["
+1Y"
+1n"
+1j"
+0d"
+1b"
+1r"
+0k"
+1{"
+1u"
+0s"
+1!#
+0|"
+1z"
+10#
+1/#
+0'#
+1%#
+17#
+01#
+1:#
+08#
+16#
+1D#
+1?#
+0=#
+1f#
+0C#
+1=!
+18!
+1A!
+0>!
+1:!
+1P!
+1m!
+1L#
+0.!
+1P#
+1Z!
+1X!
+1s!
+1l!
+1u!
+1Q#
+1[#
+1W#
+10"
+1J"
+19"
+0Z#
+0@"
+1S"
+1_#
+1["
+1f"
+1c"
+1a#
+1k"
+1s"
+0`#
+1|"
+1)#
+1&#
+11#
+1H#
+1X#
+18#
+1=#
+1F#
+1>!
+1<!
+1D!
+1Q!
+1n!
+1\#
+1Z#
+1K"
+1c#
+1d"
+1b#
+1`#
+1'#
+1i#
+1t
+1E
+#150000
+b11111111111111111101111111111111 #
+b11111111111111111101110111111111 #
+b11111111111111111101110101111111 #
+b11111111111111111101110101011111 #
+b11111111111111111101110101001111 #
+b1111111111111111101110101001111 #
+b111111111111111101110101001111 #
+b11111111111111101110101001111 #
+b1111111111111101110101001111 #
+b111111111111101110101001111 #
+b11111111111101110101001111 #
+b1111111111101110101001111 #
+b111111111101110101001111 #
+b11111111101110101001111 #
+b1111111101110101001111 #
+b111111101110101001111 #
+b11111101110101001111 #
+b1111101110101001111 #
+b111101110101001111 #
+b11101110101001111 #
+b1101110101001111 #
+b101110101001111 #
+b1110101001111 #
+b110101001111 #
+b10101001111 #
+b101001111 #
+b1001111 #
+b1111 #
+b111 #
+b11 #
+b1 #
+b0 #
+0w
+0"!
+0(!
+0+!
+05!
+0;!
+0C!
+0J!
+0N!
+0V!
+0^!
+0e!
+0k!
+0r!
+0x!
+0""
+0+"
+0/"
+06"
+0<"
+0B"
+0P"
+0X"
+0^"
+0h"
+0p"
+0x"
+0~"
+0-#
+05#
+0;#
+0A#
+0$!
+0M#
+01!
+1-!
+0=!
+0<!
+16!
+0>!
+0F!
+0D!
+0R!
+0Q!
+0S!
+0Z!
+0X!
+0a!
+0_!
+0n!
+0i!
+0l!
+0u!
+0s!
+0|!
+0z!
+0%"
+0#"
+1Y#
+02"
+0."
+00"
+0D"
+09"
+07"
+1="
+0R"
+0Q"
+0K"
+0I"
+0S"
+0["
+0Y"
+0n"
+0j"
+0d"
+0b"
+0k"
+0u"
+0s"
+0|"
+0z"
+00#
+0/#
+0'#
+0%#
+01#
+08#
+06#
+0?#
+0=#
+1C#
+0N#
+02!
+1.!
+0A!
+1>!
+0P#
+0W!
+1S!
+0K#
+0R#
+0t!
+1l!
+0Q#
+0[#
+0W#
+08"
+10"
+0Z#
+0E"
+1@"
+0Z"
+1S"
+0a#
+0r"
+1k"
+0`#
+07#
+11#
+0H#
+0F#
+0L#
+1D!
+0`!
+1X!
+0S#
+0w!
+1u!
+1Q#
+0X#
+0J"
+19"
+1Z#
+0_"
+1["
+0b#
+0{"
+1s"
+1`#
+0:#
+18#
+0_#
+0i#
+0t
+0O#
+1a!
+0T#
+0$"
+1z!
+0\#
+0c"
+1K"
+0f"
+0c#
+0!#
+1|"
+0D#
+1=#
+0E
+0U#
+1%"
+0&#
+1d"
+0)#
+0f#
+0]#
+1'#
+0d#
+0s
+0F
+#250000
+b0 !
+0!!
+0g#
+0Y#
+1M#
+0E#
+0C#
+1?#
+0>#
+0=#
+08#
+16#
+01#
+0.#
+0,#
+0'#
+1%#
+0"#
+0|"
+1z"
+0w"
+1u"
+0s"
+0m"
+0l"
+0k"
+0d"
+1b"
+0`"
+0["
+1Y"
+0S"
+0O"
+0N"
+0K"
+1I"
+0F"
+0>"
+0="
+09"
+17"
+01"
+00"
+0*"
+0("
+0%"
+1#"
+0~!
+1|!
+0{!
+0z!
+0u!
+1s!
+0m!
+0l!
+0g!
+0d!
+0a!
+1_!
+0\!
+1Z!
+0X!
+0S!
+0P!
+0L!
+0I!
+1F!
+0D!
+0>!
+0:!
+08!
+03!
+0-!
+0)!
+0'!
+1$!
+0#!
+1h#
+1[#
+1N#
+0e#
+1H#
+0?#
+04#
+0##
+0`#
+1a#
+0z"
+0t"
+0Z#
+1W#
+0a"
+0^#
+1_#
+0V"
+0G"
+04"
+0*#
+0g"
+0?"
+0Q#
+1R#
+0'"
+0#"
+0|!
+0p!
+1T#
+0c!
+0_!
+0Y!
+1P#
+0E!
+1L#
+04!
+0M#
+0?!
+06!
+0$!
+1\#
+1O#
+0h#
+1]#
+0H#
+06#
+0%#
+0u"
+0[#
+0b"
+1c#
+0Y"
+0T"
+0H"
+07"
+0s!
+1U#
+0Z!
+0H!
+0F!
+0N#
+0P#
+0L#
+1j#
+1u
+0a#
+0\#
+0_#
+0I"
+0R#
+0O#
+0T#
+1G
+0j#
+0u
+0c#
+0W#
+0U#
+0G
+0]#
+#350000
+b10000000000000 #
+b10000000100000 #
+b10000000110000 #
+b11000000110000 #
+b11000000111000 #
+b11000000111001 #
+1w
+1+!
+15!
+1;!
+1k!
+1r!
+1O#
+1-!
+1E!
+16!
+1>!
+1n!
+1l!
+1u!
+1s!
+1U#
+0.!
+1F!
+1L#
+1J#
+1R#
+1Q#
+1]#
+1T#
+#370000
+b1000000 $
+b1001000 $
+b1001100 $
+b1101100 $
+b1111100 $
+1&!
+1,!
+10!
+19!
+1B!
+1M#
+1'!
+13!
+12!
+0-!
+1=!
+18!
+1A!
+0>!
+1:!
+0F!
+1D!
+1N#
+14!
+1.!
+1?!
+06!
+1>!
+1<!
+1H!
+0D!
+1P#
+0J#
+1I!
+#530000
+b111100 $
+b110100 $
+b110000 $
+b10000 $
+b0 $
+0&!
+0,!
+00!
+09!
+0B!
+0M#
+0'!
+03!
+02!
+1-!
+0=!
+08!
+0>!
+0:!
+0I!
+1F!
+1D!
+0N#
+04!
+0.!
+0?!
+16!
+0A!
+1>!
+0L#
+0<!
+1L#
+0P#
+1J#
+0H!
+0D!
+#540000
+b1000000111001 #
+b1000000011001 #
+b1000000001001 #
+b1001 #
+b1 #
+b0 #
+0w
+0+!
+05!
+0;!
+0k!
+0r!
+0-!
+0E!
+06!
+0>!
+0n!
+0l!
+0u!
+0s!
+1.!
+0F!
+0J#
+0R#
+0Q#
+0L#
+0T#
+0O#
+0U#
+0]#
+#1000000

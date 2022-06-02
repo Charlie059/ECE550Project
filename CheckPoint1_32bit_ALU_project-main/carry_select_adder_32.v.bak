@@ -1,0 +1,389 @@
+module carry_select_adder_32(a, b, c_in, s, c_out_31, c_in_31);
+	input [31:0] a, b;
+	input c_in;
+	
+	output [31:0] s;
+	output c_out_31, c_in_31;
+	
+	wire [15:0]s_1, s_0;
+	wire c_15, c_1, c_0;
+	wire last_cin_0, last_cin_1;
+	wire [3:0]useless;
+	
+	//15-0 bit:
+	carry_select_adder_16 csa_16_1(
+		.a(a[15:0]),
+		.b(b[15:0]),
+		.c_in(c_in),
+		.s(s[15:0]),
+		.c_out(c_15),
+		.last_cin_0(useless[0]), 
+		.last_cin_1(useless[1])
+	);
+	
+	//31-16 bit:
+		carry_select_adder_16 csa0_16_2(
+		.a(a[31:16]),
+		.b(b[31:16]),
+		.c_in(1'b0),
+		.s(s_0[15:0]),
+		.c_out(c_0),
+		.last_cin_0(last_cin_0), 
+		.last_cin_1(useless[2])
+	);
+	
+		carry_select_adder_16 csa1_16_2(
+		.a(a[31:16]),
+		.b(b[31:16]),
+		.c_in(1'b1),
+		.s(s_1[15:0]),
+		.c_out(c_1),
+		.last_cin_0(useless[3]), 
+		.last_cin_1(last_cin_1)
+	);
+	
+	Mux_36to18(
+		.s_0(s_0[15:0]), 
+		.s_1(s_1[15:0]), 
+		.c_out31_0(c_0), 
+		.c_out31_1(c_1), 
+		.c_in31_0(last_cin_0), 
+		.c_in31_1(last_cin_1), 
+		.c_in(c_15), 
+		.result(s[31:16]),
+		.c_out31(c_out_31), 
+		.c_in31(c_in_31)
+	);
+	
+	//
+	
+endmodule
+
+
+module carry_select_adder_16(a, b, c_in, s, c_out, last_cin_0, last_cin_1);
+	input [15:0] a, b;
+	input c_in;
+	
+	output [15:0] s;
+	output c_out;
+	output last_cin_0;
+	output last_cin_1;
+	
+	wire [3:0]carry;
+	
+	wire [3:0]c_0;
+	wire [3:0]c_1;
+	wire [15:0]s_0;
+	wire [15:0]s_1;
+	
+//1-0 bit:
+	ripple_adder_2 rca_1_0(
+		.a(a[1:0]),
+		.b(b[1:0]),
+		.c_in(c_in),
+		.s(s[1:0]),
+		.c_out(carry[0])
+	);
+//3-2 bit:
+	ripple_adder_2 rca0_3_2(
+		.a(a[3:2]),
+		.b(b[3:2]),
+		.c_in(1'b0),
+		.s(s_0[3:2]),
+		.c_out(c_0[0])
+	);
+	
+		ripple_adder_2 rca1_3_2(
+		.a(a[3:2]),
+		.b(b[3:2]),
+		.c_in(1'b1),
+		.s(s_1[3:2]),
+		.c_out(c_1[0])
+	);
+	//Mux 6:3
+	//assign s[3:2] = carry[0] ? s_1[3:2] : s_0[3:2];
+	Mux_6to3 mux_6to3(
+		.s_0(s_0[3:2]), 
+		.s_1(s_1[3:2]), 
+		.c_0(c_0[0]), 
+		.c_1(c_1[0]), 
+		.c_in(carry[0]), 
+		.result(s[3:2]), 
+		.c_out(carry[1])
+		);
+//6-4 bit:
+	ripple_adder_3 rca0_6_4(
+		.a(a[6:4]),
+		.b(b[6:4]),
+		.c_in(1'b0),
+		.s(s_0[6:4]),
+		.c_out(c_0[1])
+	);
+	
+		ripple_adder_3 rca1_6_4(
+		.a(a[6:4]),
+		.b(b[6:4]),
+		.c_in(1'b1),
+		.s(s_1[6:4]),
+		.c_out(c_1[1])
+	);
+	//Mux 8:4
+	Mux_8to4 mux_8to4(
+		.s_0(s_0[6:4]), 
+		.s_1(s_1[6:4]), 
+		.c_0(c_0[1]), 
+		.c_1(c_1[1]), 
+		.c_in(carry[1]), 
+		.result(s[6:4]), 
+		.c_out(carry[2])
+		);
+		
+//10-7 bit:
+	ripple_adder_4 rca0_10_7(
+		.a(a[10:7]),
+		.b(b[10:7]),
+		.c_in(1'b0),
+		.s(s_0[10:7]),
+		.c_out(c_0[2])
+	);
+	
+		ripple_adder_4 rca1_10_7(
+		.a(a[10:7]),
+		.b(b[10:7]),
+		.c_in(1'b1),
+		.s(s_1[10:7]),
+		.c_out(c_1[2])
+	);
+	
+	//Mux 10:5
+	Mux_10to5 mux_10to5(
+		.s_0(s_0[10:7]), 
+		.s_1(s_1[10:7]), 
+		.c_0(c_0[2]), 
+		.c_1(c_1[2]), 
+		.c_in(carry[2]), 
+		.result(s[10:7]), 
+		.c_out(carry[3])
+		);
+	
+//15-11 bit:
+		ripple_adder_5 rca0_15_11(
+		.a(a[15:11]),
+		.b(b[15:11]),
+		.c_in(1'b0),
+		.s(s_0[15:11]),
+		.c_out(c_0[3]),
+		.last_cin(last_cin_0)
+	);
+	
+		ripple_adder_5 rca1_15_11(
+		.a(a[15:11]),
+		.b(b[15:11]),
+		.c_in(1'b1),
+		.s(s_1[15:11]),
+		.c_out(c_1[3]),
+		.last_cin(last_cin_1)
+	);
+	
+	//Mux 12:6
+	Mux_12to6 mux_12to6(
+		.s_0(s_0[15:11]), 
+		.s_1(s_1[15:11]), 
+		.c_0(c_0[3]), 
+		.c_1(c_1[3]), 
+		.c_in(carry[3]), 
+		.result(s[15:11]), 
+		.c_out(c_out)
+		);
+endmodule
+
+
+
+module full_adder_1(a, b, c_in, s, c_out);
+	input a, b, c_in;
+	output s, c_out;
+	wire net1, net2, net3;
+
+	xor xor1(net1, a, b);
+	xor xor2(s, net1, c_in);
+	and and1(net3, a, b);
+	and and2(net2, net1, c_in);
+	or or1(c_out, net2, net3);
+endmodule
+
+module ripple_adder_2(
+	input [1:0]a, b,
+	input c_in,
+	output [1:0] s,
+	output c_out);
+	
+	wire carry;
+	
+	full_adder_1 fa0(
+		.a(a[0]),
+		.b(b[0]),
+		.c_in(c_in),
+		.s(s[0]),
+		.c_out(carry)
+	);
+	
+	full_adder_1 fa1(
+		.a(a[1]),
+		.b(b[1]),
+		.c_in(carry),
+		.s(s[1]),
+		.c_out(c_out)
+	);
+	
+endmodule
+
+
+module ripple_adder_3(
+	input [2:0]a, b,
+	input c_in,
+	output [2:0] s,
+	output c_out);
+	
+	wire carry;
+	
+	full_adder_1 fa0(
+		.a(a[0]),
+		.b(b[0]),
+		.c_in(c_in),
+		.s(s[0]),
+		.c_out(carry)
+	);
+	
+	ripple_adder_2 rca2_0(
+		.a(a[2:1]),
+		.b(b[2:1]),
+		.c_in(carry),
+		.s(s[2:1]),
+		.c_out(c_out)
+	);
+	
+endmodule
+
+module ripple_adder_4(
+	input [3:0]a, b,
+	input c_in,
+	output [3:0] s,
+	output c_out);
+	
+	wire carry;
+	
+	ripple_adder_2 rca2_0(
+		.a(a[1:0]),
+		.b(b[1:0]),
+		.c_in(c_in),
+		.s(s[1:0]),
+		.c_out(carry)
+	);
+	
+	ripple_adder_2 rca2_1(
+		.a(a[3:2]),
+		.b(b[3:2]),
+		.c_in(carry),
+		.s(s[3:2]),
+		.c_out(c_out)
+	);
+	
+endmodule
+
+module ripple_adder_5(
+	input [4:0]a, b,
+	input c_in,
+	output [4:0] s,
+	output c_out, last_cin
+	);
+	
+	wire carry;
+	
+	ripple_adder_4 rca4_0(
+		.a(a[3:0]),
+		.b(b[3:0]),
+		.c_in(c_in),
+		.s(s[3:0]),
+		.c_out(carry)
+	);
+	
+	full_adder_1 fa1(
+		.a(a[4]),
+		.b(b[4]),
+		.c_in(carry),
+		.s(s[4]),
+		.c_out(c_out)
+	);
+	
+	assign last_cin = carry;
+	
+endmodule
+
+//multiplexer
+module Mux_6to3(s_0, s_1, c_0, c_1, c_in, result, c_out);
+	input [1:0] s_0, s_1;
+	input c_0, c_1;
+	input c_in;
+	
+	output [1:0] result;
+	output c_out;
+	
+	assign result = c_in ? s_1 : s_0;
+	assign c_out = c_in ? c_1 : c_0;
+
+endmodule
+
+
+module Mux_8to4(s_0, s_1, c_0, c_1, c_in, result, c_out);
+	input [2:0] s_0, s_1;
+	input c_0, c_1;
+	input c_in;
+	
+	output [2:0] result;
+	output c_out;
+	
+	assign result = c_in ? s_1 : s_0;
+	assign c_out = c_in ? c_1 : c_0;
+
+endmodule
+
+
+module Mux_10to5(s_0, s_1, c_0, c_1, c_in, result, c_out);
+	input [3:0] s_0, s_1;
+	input c_0, c_1;
+	input c_in;
+	
+	output [3:0] result;
+	output c_out;
+	
+	assign result = c_in ? s_1 : s_0;
+	assign c_out = c_in ? c_1 : c_0;
+
+endmodule
+
+
+module Mux_12to6(s_0, s_1, c_0, c_1, c_in, result, c_out);
+	input [4:0] s_0, s_1;
+	input c_0, c_1;
+	input c_in;
+	
+	output [4:0] result;
+	output c_out;
+	
+	assign result = c_in ? s_1 : s_0;
+	assign c_out = c_in ? c_1 : c_0;
+
+endmodule
+
+module Mux_36to18(s_0, s_1, c_out31_0, c_out31_1, c_in31_0, c_in31_1, c_in, result, c_out31, c_in31);
+	input [15:0] s_0, s_1;
+	input c_out31_0, c_out31_1, c_in31_0, c_in31_1, c_in;
+	
+	output [15:0] result;
+	output c_out31, c_in31;
+	
+	assign result = c_in ? s_1 : s_0;
+	assign c_out31 = c_in ? c_out31_1 : c_out31_0;
+	assign c_in31 = c_in ? c_in31_1 : c_in31_0;
+
+endmodule

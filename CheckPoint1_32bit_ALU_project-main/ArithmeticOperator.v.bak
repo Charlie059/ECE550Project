@@ -1,0 +1,17 @@
+/* This file is defined the Arithmetic Operator with add and sub functions
+Xuhui Gong	21-09-11
+*/
+module ArithmeticOperator(data_result, isNotEqual, isLessThan, overflow, data_operandA, data_operandB, ctrl_ALUopcode);
+	
+   input [31:0] data_operandA, data_operandB;
+   input [4:0] ctrl_ALUopcode;
+
+   output [31:0] data_result;
+   output isNotEqual, isLessThan, overflow;
+	
+	ADD_SUB_EN 
+	
+
+endmodule
+
+

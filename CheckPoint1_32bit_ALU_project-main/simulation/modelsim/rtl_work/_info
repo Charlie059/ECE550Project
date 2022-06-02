@@ -1,0 +1,594 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/GX/Desktop/ECE550/Project1/simulation/modelsim
+vADD_SUB_EN
+Z1 !s110 1631419495
+!i10b 1
+!s100 =4Bj9RZ;i[k<3N6d^0M?D2
+IU24dhOk@8A=TNz=egKR<O0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1631403346
+8C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_EN.v
+FC:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_EN.v
+L0 4
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z4 !s108 1631419495.000000
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_EN.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_EN.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1
+n@a@d@d_@s@u@b_@e@n
+vADD_SUB_OP
+R1
+!i10b 1
+!s100 dR928T@Fkb5VaBAz<R1LX3
+IdVP2OZb`8IDka6Z41QQoa0
+R2
+R0
+w1631414787
+8C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_OP.v
+FC:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_OP.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_OP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_OP.v|
+!i113 1
+R5
+R6
+n@a@d@d_@s@u@b_@o@p
+valu
+R1
+!i10b 1
+!s100 RVnD<OCIE49O6BId`leIf0
+Id2kO2P=4EiA=>8:c0FcG@1
+R2
+R0
+w1631411592
+8C:/Users/GX/Desktop/ECE550/Project1/alu.v
+FC:/Users/GX/Desktop/ECE550/Project1/alu.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/GX/Desktop/ECE550/Project1/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/alu.v|
+!i113 1
+R5
+R6
+valu_tb
+!s110 1631419499
+!i10b 1
+!s100 _VBMEf4SJmm`BE`nXKY=C0
+IcGfazE=L`d9m8UmfI^Snc3
+R2
+R0
+w1631410111
+8C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v
+FC:/Users/GX/Desktop/ECE550/Project1/alu_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1631419499.000000
+!s107 C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v|
+!i113 1
+R5
+R6
+vAND_3
+R1
+!i10b 1
+!s100 nCj?EnA3OdRahBLDBT_2k3
+I@G?Y6T4I;f<oWLe7Ud3=A3
+R2
+R0
+w1631403382
+8C:/Users/GX/Desktop/ECE550/Project1/AND_3.v
+FC:/Users/GX/Desktop/ECE550/Project1/AND_3.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/GX/Desktop/ECE550/Project1/AND_3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/AND_3.v|
+!i113 1
+R5
+R6
+n@a@n@d_3
+vAND_Gate_4
+Z7 !s110 1631419496
+!i10b 1
+!s100 aU@Glg4E`Sg2b?5SZ?Jn?3
+I6I0R96b:@`XfIn]MA?iKa3
+R2
+R0
+w1631403399
+8C:/Users/GX/Desktop/ECE550/Project1/AND_Gate_4.v
+FC:/Users/GX/Desktop/ECE550/Project1/AND_Gate_4.v
+L0 4
+R3
+r1
+!s85 0
+31
+Z8 !s108 1631419496.000000
+!s107 C:/Users/GX/Desktop/ECE550/Project1/AND_Gate_4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/AND_Gate_4.v|
+!i113 1
+R5
+R6
+n@a@n@d_@gate_4
+vArithmeticOperator
+Z9 !s110 1631419497
+!i10b 1
+!s100 9L77ZSIDoUTj1Y22C87a22
+Id=R]dDSa7IJB2z<95E=zz3
+R2
+R0
+w1631415619
+8C:/Users/GX/Desktop/ECE550/Project1/ArithmeticOperator.v
+FC:/Users/GX/Desktop/ECE550/Project1/ArithmeticOperator.v
+L0 4
+R3
+r1
+!s85 0
+31
+Z10 !s108 1631419497.000000
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ArithmeticOperator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ArithmeticOperator.v|
+!i113 1
+R5
+R6
+n@arithmetic@operator
+vcarry_select_adder_16
+R9
+!i10b 1
+!s100 Ha9>PDVL0lcL_S32_]>X_2
+IMYVLZMQQe>K@Y;k_lF0c11
+R2
+R0
+w1631419117
+8C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_16.v
+FC:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_16.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_16.v|
+!i113 1
+R5
+R6
+vcarry_select_adder_32
+R7
+!i10b 1
+!s100 V1nb_iOYXZe8DOz;84OA<0
+I2ad`2IAPbOcBBKgib@hZ=3
+R2
+R0
+w1631419417
+8C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_32.v
+FC:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_32.v|
+!i113 1
+R5
+R6
+vfull_adder_1
+R9
+!i10b 1
+!s100 SQfM]]hNdmBo5d:a=Tj[C3
+IiFQK7HzAPI?f83Egk1@]j2
+R2
+R0
+w1631419148
+8C:/Users/GX/Desktop/ECE550/Project1/full_adder_1.v
+FC:/Users/GX/Desktop/ECE550/Project1/full_adder_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/full_adder_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/full_adder_1.v|
+!i113 1
+R5
+R6
+visLessThan
+R9
+!i10b 1
+!s100 mV7W@^44GoQ@b4Eao=gRU1
+IG^0zXZLD[hXO0QZaZ@eMf0
+R2
+R0
+w1631403578
+8C:/Users/GX/Desktop/ECE550/Project1/isLessThan.v
+FC:/Users/GX/Desktop/ECE550/Project1/isLessThan.v
+L0 4
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/isLessThan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/isLessThan.v|
+!i113 1
+R5
+R6
+nis@less@than
+visNotEqual
+R9
+!i10b 1
+!s100 IEGWBiHBdfL=`kY;?=IzW1
+IK_ik5j]W@6IYk3X6nW4i61
+R2
+R0
+w1631411839
+8C:/Users/GX/Desktop/ECE550/Project1/isNotEqual.v
+FC:/Users/GX/Desktop/ECE550/Project1/isNotEqual.v
+L0 4
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/isNotEqual.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/isNotEqual.v|
+!i113 1
+R5
+R6
+nis@not@equal
+vMux_10to5
+Z11 !s110 1631419498
+!i10b 1
+!s100 2lF>blg_cO]JjMggfh_cG2
+I7BMAAi`?hIcgLI3>[nOXl1
+R2
+R0
+w1631419272
+8C:/Users/GX/Desktop/ECE550/Project1/Mux_10to5.v
+FC:/Users/GX/Desktop/ECE550/Project1/Mux_10to5.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z12 !s108 1631419498.000000
+!s107 C:/Users/GX/Desktop/ECE550/Project1/Mux_10to5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/Mux_10to5.v|
+!i113 1
+R5
+R6
+n@mux_10to5
+vMux_12to6
+R11
+!i10b 1
+!s100 nmSCo4`g]iN<Yn?oTUVOJ0
+IPn`enkEo`<T=4:FY>Jh?b1
+R2
+R0
+w1631419310
+8C:/Users/GX/Desktop/ECE550/Project1/Mux_12to6.v
+FC:/Users/GX/Desktop/ECE550/Project1/Mux_12to6.v
+L0 2
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/GX/Desktop/ECE550/Project1/Mux_12to6.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/Mux_12to6.v|
+!i113 1
+R5
+R6
+n@mux_12to6
+vMUX_2to1_32B
+R7
+!i10b 1
+!s100 MR>36cNLk@3UZ@ACIe2MM3
+I7^>d2;0i`[:gk0EBEoPDz3
+R2
+R0
+w1631403416
+8C:/Users/GX/Desktop/ECE550/Project1/MUX_2to1_32B.v
+FC:/Users/GX/Desktop/ECE550/Project1/MUX_2to1_32B.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/GX/Desktop/ECE550/Project1/MUX_2to1_32B.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/MUX_2to1_32B.v|
+!i113 1
+R5
+R6
+n@m@u@x_2to1_32@b
+vMux_36to18
+R11
+!i10b 1
+!s100 fom0W4fj3h?[mHg0`Z:V01
+I`]azKSSkomdR?zPM^dYYX0
+R2
+R0
+w1631419326
+8C:/Users/GX/Desktop/ECE550/Project1/Mux_36to18.v
+FC:/Users/GX/Desktop/ECE550/Project1/Mux_36to18.v
+L0 4
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/GX/Desktop/ECE550/Project1/Mux_36to18.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/Mux_36to18.v|
+!i113 1
+R5
+R6
+n@mux_36to18
+vMux_6to3
+R11
+!i10b 1
+!s100 WQh2GogF5[feRfV`K@MmW3
+IPWb=bf:bHRgSP6_KPd?Hz1
+R2
+R0
+w1631419236
+8C:/Users/GX/Desktop/ECE550/Project1/Mux_6to3.v
+FC:/Users/GX/Desktop/ECE550/Project1/Mux_6to3.v
+L0 2
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/GX/Desktop/ECE550/Project1/Mux_6to3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/Mux_6to3.v|
+!i113 1
+R5
+R6
+n@mux_6to3
+vMux_8to4
+R11
+!i10b 1
+!s100 AgBmaZULkac6hPAlUzjM]3
+Iz]03_0`3P?H1;JJ@dG]1?2
+R2
+R0
+w1631419253
+8C:/Users/GX/Desktop/ECE550/Project1/Mux_8to4.v
+FC:/Users/GX/Desktop/ECE550/Project1/Mux_8to4.v
+L0 3
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/GX/Desktop/ECE550/Project1/Mux_8to4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/Mux_8to4.v|
+!i113 1
+R5
+R6
+n@mux_8to4
+vNOT_1
+R7
+!i10b 1
+!s100 D=Rf>oN7mdFeBIQAP]na82
+I1kKc>6LX5c5z5mjU>iKi_3
+R2
+R0
+w1631403434
+8C:/Users/GX/Desktop/ECE550/Project1/NOT_1.v
+FC:/Users/GX/Desktop/ECE550/Project1/NOT_1.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/GX/Desktop/ECE550/Project1/NOT_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/NOT_1.v|
+!i113 1
+R5
+R6
+n@n@o@t_1
+vNOT_32
+R7
+!i10b 1
+!s100 HE84P<PHXH7:[iSjhbA5m0
+IzDlFWZ1YmH1;o47c]c<iU3
+R2
+R0
+w1631403453
+8C:/Users/GX/Desktop/ECE550/Project1/NOT_32.v
+FC:/Users/GX/Desktop/ECE550/Project1/NOT_32.v
+L0 7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/GX/Desktop/ECE550/Project1/NOT_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/NOT_32.v|
+!i113 1
+R5
+R6
+n@n@o@t_32
+vOR_32
+R7
+!i10b 1
+!s100 ;h>TjZn>N5AFC?J:VglZJ3
+I<OW[7ETfl?OhYFW]AGAI52
+R2
+R0
+w1631415845
+8C:/Users/GX/Desktop/ECE550/Project1/OR_32.v
+FC:/Users/GX/Desktop/ECE550/Project1/OR_32.v
+L0 5
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/GX/Desktop/ECE550/Project1/OR_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/OR_32.v|
+!i113 1
+R5
+R6
+n@o@r_32
+vOR_8
+R7
+!i10b 1
+!s100 XRBli9L1Adbj:f0;bZkgC1
+I5DQEHSNH_bDD`Z56oTYB53
+R2
+R0
+w1631403506
+8C:/Users/GX/Desktop/ECE550/Project1/OR_8.v
+FC:/Users/GX/Desktop/ECE550/Project1/OR_8.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/GX/Desktop/ECE550/Project1/OR_8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/OR_8.v|
+!i113 1
+R5
+R6
+n@o@r_8
+voverflow
+R9
+!i10b 1
+!s100 aTI<LVa>C[Qi@L?^]3Yd70
+IA402GzQl2LQzFXnUFobQR0
+R2
+R0
+w1631408672
+8C:/Users/GX/Desktop/ECE550/Project1/overflow.v
+FC:/Users/GX/Desktop/ECE550/Project1/overflow.v
+L0 4
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/overflow.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/overflow.v|
+!i113 1
+R5
+R6
+vripple_adder_2
+R9
+!i10b 1
+!s100 MN<zojS22bli0R>:_Xm`;2
+Iji^LXbe1Y?9`ClKnk3_l<3
+R2
+R0
+w1631419165
+8C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_2.v
+FC:/Users/GX/Desktop/ECE550/Project1/ripple_adder_2.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_2.v|
+!i113 1
+R5
+R6
+vripple_adder_3
+R11
+!i10b 1
+!s100 2FB7UYUJaM;IgE;bZM;6^3
+IWDFUEmkTEnGc`G;f>T@>23
+R2
+R0
+w1631419181
+8C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_3.v
+FC:/Users/GX/Desktop/ECE550/Project1/ripple_adder_3.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_3.v|
+!i113 1
+R5
+R6
+vripple_adder_4
+R11
+!i10b 1
+!s100 84jD^N9n8j><U];Rz^7BY0
+ICBCo>FXa@5l6G9;:Oj3nT1
+R2
+R0
+w1631419195
+8C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_4.v
+FC:/Users/GX/Desktop/ECE550/Project1/ripple_adder_4.v
+L0 2
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_4.v|
+!i113 1
+R5
+R6
+vripple_adder_5
+R11
+!i10b 1
+!s100 KnNXJ;7@kbcj`oUGIlI0e3
+I45YCXKbWebjEF]z>JIhSQ3
+R2
+R0
+w1631419208
+8C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_5.v
+FC:/Users/GX/Desktop/ECE550/Project1/ripple_adder_5.v
+L0 3
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GX/Desktop/ECE550/Project1|C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_5.v|
+!i113 1
+R5
+R6

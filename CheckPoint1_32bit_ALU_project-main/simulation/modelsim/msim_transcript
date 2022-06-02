@@ -1,0 +1,328 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do alu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:55 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 00:04:55 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_EN.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:55 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_EN.v 
+# -- Compiling module ADD_SUB_EN
+# 
+# Top level modules:
+# 	ADD_SUB_EN
+# End time: 00:04:55 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_OP.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:55 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ADD_SUB_OP.v 
+# -- Compiling module ADD_SUB_OP
+# 
+# Top level modules:
+# 	ADD_SUB_OP
+# End time: 00:04:55 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/AND_3.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:55 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/AND_3.v 
+# -- Compiling module AND_3
+# 
+# Top level modules:
+# 	AND_3
+# End time: 00:04:55 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/AND_Gate_4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/AND_Gate_4.v 
+# -- Compiling module AND_Gate_4
+# 
+# Top level modules:
+# 	AND_Gate_4
+# End time: 00:04:56 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/MUX_2to1_32B.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/MUX_2to1_32B.v 
+# -- Compiling module MUX_2to1_32B
+# 
+# Top level modules:
+# 	MUX_2to1_32B
+# End time: 00:04:56 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/NOT_1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/NOT_1.v 
+# -- Compiling module NOT_1
+# 
+# Top level modules:
+# 	NOT_1
+# End time: 00:04:56 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/NOT_32.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/NOT_32.v 
+# -- Compiling module NOT_32
+# 
+# Top level modules:
+# 	NOT_32
+# End time: 00:04:56 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/OR_32.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/OR_32.v 
+# -- Compiling module OR_32
+# 
+# Top level modules:
+# 	OR_32
+# End time: 00:04:56 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/OR_8.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/OR_8.v 
+# -- Compiling module OR_8
+# 
+# Top level modules:
+# 	OR_8
+# End time: 00:04:56 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_32.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:56 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_32.v 
+# -- Compiling module carry_select_adder_32
+# 
+# Top level modules:
+# 	carry_select_adder_32
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/isLessThan.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/isLessThan.v 
+# -- Compiling module isLessThan
+# 
+# Top level modules:
+# 	isLessThan
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/isNotEqual.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/isNotEqual.v 
+# -- Compiling module isNotEqual
+# 
+# Top level modules:
+# 	isNotEqual
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ArithmeticOperator.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ArithmeticOperator.v 
+# -- Compiling module ArithmeticOperator
+# 
+# Top level modules:
+# 	ArithmeticOperator
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/overflow.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/overflow.v 
+# -- Compiling module overflow
+# 
+# Top level modules:
+# 	overflow
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_16.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/carry_select_adder_16.v 
+# -- Compiling module carry_select_adder_16
+# 
+# Top level modules:
+# 	carry_select_adder_16
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/full_adder_1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/full_adder_1.v 
+# -- Compiling module full_adder_1
+# 
+# Top level modules:
+# 	full_adder_1
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_2.v 
+# -- Compiling module ripple_adder_2
+# 
+# Top level modules:
+# 	ripple_adder_2
+# End time: 00:04:57 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_3.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:57 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_3.v 
+# -- Compiling module ripple_adder_3
+# 
+# Top level modules:
+# 	ripple_adder_3
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_4.v 
+# -- Compiling module ripple_adder_4
+# 
+# Top level modules:
+# 	ripple_adder_4
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_5.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/ripple_adder_5.v 
+# -- Compiling module ripple_adder_5
+# 
+# Top level modules:
+# 	ripple_adder_5
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/Mux_6to3.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/Mux_6to3.v 
+# -- Compiling module Mux_6to3
+# 
+# Top level modules:
+# 	Mux_6to3
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/Mux_8to4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/Mux_8to4.v 
+# -- Compiling module Mux_8to4
+# 
+# Top level modules:
+# 	Mux_8to4
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/Mux_10to5.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/Mux_10to5.v 
+# -- Compiling module Mux_10to5
+# 
+# Top level modules:
+# 	Mux_10to5
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/Mux_12to6.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/Mux_12to6.v 
+# -- Compiling module Mux_12to6
+# 
+# Top level modules:
+# 	Mux_12to6
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/Mux_36to18.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:58 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/Mux_36to18.v 
+# -- Compiling module Mux_36to18
+# 
+# Top level modules:
+# 	Mux_36to18
+# End time: 00:04:58 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/GX/Desktop/ECE550/Project1 {C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:04:59 on Sep 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/GX/Desktop/ECE550/Project1" C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 00:04:59 on Sep 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 00:04:59 on Sep 12,2021
+# Loading work.alu_tb
+# Loading work.alu
+# Loading work.ArithmeticOperator
+# Loading work.ADD_SUB_EN
+# Loading work.AND_Gate_4
+# Loading work.ADD_SUB_OP
+# Loading work.NOT_32
+# Loading work.MUX_2to1_32B
+# Loading work.carry_select_adder_32
+# Loading work.carry_select_adder_16
+# Loading work.ripple_adder_2
+# Loading work.full_adder_1
+# Loading work.Mux_6to3
+# Loading work.ripple_adder_3
+# Loading work.Mux_8to4
+# Loading work.ripple_adder_4
+# Loading work.Mux_10to5
+# Loading work.ripple_adder_5
+# Loading work.Mux_12to6
+# Loading work.Mux_36to18
+# Loading work.overflow
+# Loading work.isNotEqual
+# Loading work.OR_32
+# Loading work.OR_8
+# Loading work.isLessThan
+# Loading work.AND_3
+# Loading work.NOT_1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+# The simulation completed without errors
+# ** Note: $stop    : C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v(51)
+#    Time: 1560 ns  Iteration: 1  Instance: /alu_tb
+# Break in Module alu_tb at C:/Users/GX/Desktop/ECE550/Project1/alu_tb.v line 51
+# End time: 00:06:15 on Sep 12,2021, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0

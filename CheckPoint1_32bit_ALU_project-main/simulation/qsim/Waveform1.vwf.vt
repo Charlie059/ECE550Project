@@ -1,0 +1,301 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/11/2021 22:44:13"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ADD_SUB_OP
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ADD_SUB_OP_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [4:0] op_code;
+reg [31:0] operandB;
+// wires                                               
+wire _operandB_;
+
+// assign statements (if any)                          
+ADD_SUB_OP i1 (
+// port map - connection between master ports and signals/registers   
+	._operandB_(_operandB_),
+	.op_code(op_code),
+	.operandB(operandB)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// op_code[ 4 ]
+initial
+begin
+	op_code[4] = 1'b0;
+end 
+// op_code[ 3 ]
+initial
+begin
+	op_code[3] = 1'b0;
+end 
+// op_code[ 2 ]
+initial
+begin
+	op_code[2] = 1'b0;
+end 
+// op_code[ 1 ]
+initial
+begin
+	op_code[1] = 1'b0;
+end 
+// op_code[ 0 ]
+initial
+begin
+	op_code[0] = 1'b0;
+	op_code[0] = #160000 1'b1;
+	op_code[0] = #210000 1'b0;
+end 
+// operandB[ 31 ]
+initial
+begin
+	operandB[31] = 1'b0;
+	operandB[31] = #210000 1'b1;
+	operandB[31] = #160000 1'b0;
+end 
+// operandB[ 30 ]
+initial
+begin
+	operandB[30] = 1'b0;
+	operandB[30] = #210000 1'b1;
+	operandB[30] = #160000 1'b0;
+end 
+// operandB[ 29 ]
+initial
+begin
+	operandB[29] = 1'b0;
+	operandB[29] = #210000 1'b1;
+	operandB[29] = #160000 1'b0;
+end 
+// operandB[ 28 ]
+initial
+begin
+	operandB[28] = 1'b0;
+	operandB[28] = #210000 1'b1;
+	operandB[28] = #160000 1'b0;
+end 
+// operandB[ 27 ]
+initial
+begin
+	operandB[27] = 1'b0;
+	operandB[27] = #210000 1'b1;
+	operandB[27] = #160000 1'b0;
+end 
+// operandB[ 26 ]
+initial
+begin
+	operandB[26] = 1'b0;
+	operandB[26] = #210000 1'b1;
+	operandB[26] = #160000 1'b0;
+end 
+// operandB[ 25 ]
+initial
+begin
+	operandB[25] = 1'b0;
+	operandB[25] = #210000 1'b1;
+	operandB[25] = #160000 1'b0;
+end 
+// operandB[ 24 ]
+initial
+begin
+	operandB[24] = 1'b0;
+	operandB[24] = #210000 1'b1;
+	operandB[24] = #160000 1'b0;
+end 
+// operandB[ 23 ]
+initial
+begin
+	operandB[23] = 1'b0;
+	operandB[23] = #210000 1'b1;
+	operandB[23] = #160000 1'b0;
+end 
+// operandB[ 22 ]
+initial
+begin
+	operandB[22] = 1'b0;
+	operandB[22] = #210000 1'b1;
+	operandB[22] = #160000 1'b0;
+end 
+// operandB[ 21 ]
+initial
+begin
+	operandB[21] = 1'b0;
+	operandB[21] = #210000 1'b1;
+	operandB[21] = #160000 1'b0;
+end 
+// operandB[ 20 ]
+initial
+begin
+	operandB[20] = 1'b0;
+	operandB[20] = #210000 1'b1;
+	operandB[20] = #160000 1'b0;
+end 
+// operandB[ 19 ]
+initial
+begin
+	operandB[19] = 1'b0;
+	operandB[19] = #210000 1'b1;
+	operandB[19] = #160000 1'b0;
+end 
+// operandB[ 18 ]
+initial
+begin
+	operandB[18] = 1'b0;
+	operandB[18] = #210000 1'b1;
+	operandB[18] = #160000 1'b0;
+end 
+// operandB[ 17 ]
+initial
+begin
+	operandB[17] = 1'b0;
+	operandB[17] = #210000 1'b1;
+	operandB[17] = #160000 1'b0;
+end 
+// operandB[ 16 ]
+initial
+begin
+	operandB[16] = 1'b0;
+	operandB[16] = #210000 1'b1;
+	operandB[16] = #160000 1'b0;
+end 
+// operandB[ 15 ]
+initial
+begin
+	operandB[15] = 1'b0;
+	operandB[15] = #210000 1'b1;
+	operandB[15] = #160000 1'b0;
+end 
+// operandB[ 14 ]
+initial
+begin
+	operandB[14] = 1'b0;
+	operandB[14] = #210000 1'b1;
+	operandB[14] = #160000 1'b0;
+end 
+// operandB[ 13 ]
+initial
+begin
+	operandB[13] = 1'b0;
+	operandB[13] = #210000 1'b1;
+	operandB[13] = #160000 1'b0;
+end 
+// operandB[ 12 ]
+initial
+begin
+	operandB[12] = 1'b0;
+	operandB[12] = #210000 1'b1;
+	operandB[12] = #160000 1'b0;
+end 
+// operandB[ 11 ]
+initial
+begin
+	operandB[11] = 1'b0;
+	operandB[11] = #20000 1'b1;
+	operandB[11] = #350000 1'b0;
+end 
+// operandB[ 10 ]
+initial
+begin
+	operandB[10] = 1'b0;
+	operandB[10] = #20000 1'b1;
+	operandB[10] = #350000 1'b0;
+end 
+// operandB[ 9 ]
+initial
+begin
+	operandB[9] = 1'b0;
+	operandB[9] = #20000 1'b1;
+	operandB[9] = #350000 1'b0;
+end 
+// operandB[ 8 ]
+initial
+begin
+	operandB[8] = 1'b0;
+	operandB[8] = #20000 1'b1;
+	operandB[8] = #350000 1'b0;
+end 
+// operandB[ 7 ]
+initial
+begin
+	operandB[7] = 1'b0;
+	operandB[7] = #20000 1'b1;
+	operandB[7] = #350000 1'b0;
+end 
+// operandB[ 6 ]
+initial
+begin
+	operandB[6] = 1'b0;
+	operandB[6] = #20000 1'b1;
+	operandB[6] = #350000 1'b0;
+end 
+// operandB[ 5 ]
+initial
+begin
+	operandB[5] = 1'b0;
+	operandB[5] = #20000 1'b1;
+	operandB[5] = #350000 1'b0;
+end 
+// operandB[ 4 ]
+initial
+begin
+	operandB[4] = 1'b0;
+	operandB[4] = #20000 1'b1;
+	operandB[4] = #350000 1'b0;
+end 
+// operandB[ 3 ]
+initial
+begin
+	operandB[3] = 1'b0;
+	operandB[3] = #20000 1'b1;
+	operandB[3] = #350000 1'b0;
+end 
+// operandB[ 2 ]
+initial
+begin
+	operandB[2] = 1'b0;
+	operandB[2] = #20000 1'b1;
+	operandB[2] = #350000 1'b0;
+end 
+// operandB[ 1 ]
+initial
+begin
+	operandB[1] = 1'b0;
+	operandB[1] = #20000 1'b1;
+	operandB[1] = #350000 1'b0;
+end 
+// operandB[ 0 ]
+initial
+begin
+	operandB[0] = 1'b0;
+	operandB[0] = #20000 1'b1;
+	operandB[0] = #350000 1'b0;
+end 
+endmodule
+
